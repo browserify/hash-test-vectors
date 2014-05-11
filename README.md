@@ -30,6 +30,28 @@ vectors.forEach(function (v, i) {
 
 ```
 
+## hmac example
+
+hmac vectors are also provided, which are taken from rfc4231 (included in this repo)
+
+each test vector has `{key: hex, data: hex}` and the outputs of hmac with every
+hash algorithm in node, also in hex encoding.
+
+``` js
+var vectors = require('hash-test-vectors')
+var tape = require('tape')
+var MySha1Hmac = require('./my-sha1-hmac-implementation')
+
+vectors.forEach(function (v, i) {
+  tape('my-sha1-hmac against test vector ' + i, function (t) {
+    //test in bash64 encoding + as a buffer
+    t.equal(new MySha1Hmac(new Buffer(v.key, 'hex')).update(v.data, 'hex').digest('hex'), v.sha1)
+    t.end()
+  })
+})
+
+```
+
 
 ## License
 
