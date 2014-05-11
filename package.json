@@ -1,20 +1,18 @@
 {
   "name": "hash-test-vectors",
   "description": "test vectors for hashes",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "homepage": "https://github.com/dominictarr/hash-test-vectors",
   "repository": {
     "type": "git",
     "url": "git://github.com/dominictarr/hash-test-vectors.git"
   },
-  "dependencies": {
-  },
-  "devDependencies": {
-  },
+  "dependencies": {},
+  "devDependencies": {},
   "scripts": {
     "test": "set -e; for t in test/*.js; do node $t; done",
     "build": "node vectors.js > index.json; node hmac-vectors.js > hmac.json"
   },
   "author": "Dominic Tarr <dominic.tarr@gmail.com> (http://dominictarr.com)",
-  "license": "MIT"  
+  "license": "MIT"
 }
