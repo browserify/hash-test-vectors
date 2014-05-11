@@ -9,6 +9,8 @@ plus all output of every hash function that node.js supports.
 
 This makes it easy to test javascript hash functions, with fairly roboust coverage.
 
+I took the original test vectors at http://www.nsrl.nist.gov/testdata/
+
 ## example
 
 ``` js
