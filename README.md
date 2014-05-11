@@ -52,6 +52,25 @@ vectors.forEach(function (v, i) {
 
 ```
 
+## pbkdf2 example
+
+
+``` js
+var vectors = require('hash-test-vectors')
+var tape = require('tape')
+var MyPbkdf2 = require('./my-pbkdf2-implementation')
+
+vectors.forEach(function (v, i) {
+  tape('my-pbkdf2 against test vector ' + i, function (t) {
+    //test in bash64 encoding + as a buffer
+    var key = new MyPbkdf2(v.password, v.salt, v.iterations, v.length)
+    t.equal(key.toString('hex')), v.sha1)
+    t.end()
+  })
+})
+
+```
+
 
 ## License
 
