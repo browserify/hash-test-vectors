@@ -13,7 +13,7 @@
   },
   "scripts": {
     "test": "set -e; for t in test/*.js; do node $t; done",
-    "build": "node vectors.js > index.json"
+    "build": "node vectors.js > index.json; node hmac-vectors.js > hmac.json"
   },
   "author": "Dominic Tarr <dominic.tarr@gmail.com> (http://dominictarr.com)",
   "license": "MIT"  
