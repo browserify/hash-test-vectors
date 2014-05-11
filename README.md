@@ -32,7 +32,8 @@ vectors.forEach(function (v, i) {
 
 ## hmac example
 
-hmac vectors are also provided, which are taken from rfc4231 (included in this repo)
+hmac vectors taken from [rfc4231](http://tools.ietf.org/rfc/rfc4231.txt)
+(included in this repo)
 
 each test vector has `{key: hex, data: hex}` and the outputs of hmac with every
 hash algorithm in node, also in hex encoding.
@@ -54,6 +55,8 @@ vectors.forEach(function (v, i) {
 
 ## pbkdf2 example
 
+pbkdf2 vectors taken from [rfc6070](http://tools.ietf.org/rfc/rfc6070.txt)
+(also included in this repo)
 
 ``` js
 var vectors = require('hash-test-vectors')
