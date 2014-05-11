@@ -1,7 +1,7 @@
 {
   "name": "hash-test-vectors",
   "description": "test vectors for hashes",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "homepage": "https://github.com/dominictarr/hash-test-vectors",
   "repository": {
     "type": "git",
