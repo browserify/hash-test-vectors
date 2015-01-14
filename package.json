@@ -2,10 +2,10 @@
   "name": "hash-test-vectors",
   "description": "test vectors for hashes",
   "version": "1.3.1",
-  "homepage": "https://github.com/dominictarr/hash-test-vectors",
+  "homepage": "https://github.com/crypto-browserify/hash-test-vectors",
   "repository": {
     "type": "git",
-    "url": "git://github.com/dominictarr/hash-test-vectors.git"
+    "url": "git://github.com/crypto-browserify/hash-test-vectors.git"
   },
   "dependencies": {},
   "devDependencies": {},
